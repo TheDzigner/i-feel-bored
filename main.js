@@ -1,6 +1,3 @@
-var btn_src = 
-
-document.querySelector('.input_container button')
 
 var textarea = 
 
@@ -22,35 +19,13 @@ function search()
 
 document.querySelector('.input_container input')
 
-  async function search_a() {
-
-    
-
-    try {
-
-      const results_src = await fetch(`https://www.boredapi.com/api/activity?type=${input.value}`)
-
-      const data_src = await results.json()
-
-      console.log(data)
-
-    } catch (e) {
-
-      alert('an error occurred try again later')
-
-    }
-
-  }
-
-}
-
-btn_src.onclick = search
+  
 
 async function showContent() {
 
   try {
 
-    const results = await fetch(`https://www.boredapi.com/api/activity`)
+    const results = await fetch(`https://www.boredapi.com/api/activity?type=${input.value}`)
 
     const data = await results.json()
 
