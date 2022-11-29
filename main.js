@@ -18,7 +18,7 @@ async function showContent() {
 
   try {
 
-    const results = await fetch(`https://www.boredapi.com/api/activity?type=${input.value}`)
+    const results = await fetch(`https://www.boredapi.com/api/activity?type=${input.value.toLowerCase().trim()}`)
 
     const data = await results.json()
 
