@@ -62,6 +62,10 @@ showContent()
 
 browser_btn.onclick = showContent
 
+ window.addEventListener('keypress', showContent)
+
+
+
 // fetch('https://api.publicapis.org/entries')
 
 // .then(res =>res.json())
